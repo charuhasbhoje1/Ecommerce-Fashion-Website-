@@ -1,0 +1,507 @@
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+   padding: 0;
+   background-color: #f9f9f9;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #f8f5f0;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: #4a4a4a;
+    margin: 0 15px;
+    font-size: 18px;
+    padding: 10px 15px;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  }
+
+  .navbar a:hover {
+    background-color: #4a4a4a;
+    color: #f8f5f0;
+    transform: scale(1.05);
+  }
+
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4a4a4a;
+  }
+
+  .navbar .right-menu {
+    display: flex;
+    align-items: center;
+  }
+.common{
+    display:flex;
+}
+ .sidebar {
+            width: 20%;
+            padding: 20px;
+            box-sizing: border-box;
+            border-right: 1px solid #ddd;
+            
+        }
+        .sidebar h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .sidebar a {
+            display: block;
+            color: #333;
+            text-decoration: none;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+        .filter-section {
+            margin-top: 40px;
+        }
+        .filter-section h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .filter-section .filter-item {
+            margin-bottom: 20px;
+        }
+        .filter-section .filter-item label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .filter-section .filter-item input[type="range"] {
+            width: 100%;
+        }
+ .content {
+            width: 80%;
+            padding:20px;
+            box-sizing: border-box;
+        }
+        .content h1 {
+            text-align:center;
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .content p {
+            
+            font-size: 16px;
+            text-align:center;
+            
+           
+        }
+        .content .product-count {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .content .sort-by {
+            
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .product-images {
+            display: flex;
+            white-space:no-wrap;
+            gap: 20px;
+        }
+        .product-images img {
+            height:900px;
+            width:650px;
+             
+            
+         }
+
+@media(max-width:768px)
+{
+           .sidebar {
+                width: 100%;
+                border-right: none;
+                border-bottom: 1px solid #ddd;
+            }
+            .content {
+                width: 80%;
+            }
+            .product-images {
+                
+            }
+            
+        }
+.image-container1 {
+    position: absolute;
+     width:1000px;
+     
+
+}
+
+.image-container1 img {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    transition: opacity 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.hover-image {
+    opacity: 0; /* Hide the hover image by default */
+}
+
+.image-container1:hover .hover-image {
+    opacity: 1; /* Show the hover image on hover */
+}
+
+.image-container1:hover .default-image {
+    opacity: 0; /* Hide the default image on hover */
+}
+
+
+.image-container2 {
+    position: absolute;
+    width:590px;
+    
+    
+
+}
+
+.image-container2 img {
+    position: absolute;
+    top: 0;
+    left: 720px;
+    transition: opacity 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.hover-image2 {
+    opacity: 0; /* Hide the hover image by default */
+}
+
+.image-container2:hover .hover-image2 {
+    opacity: 1; /* Show the hover image on hover */
+}
+
+.image-container2:hover .default-image2 {
+    opacity: 0; /* Hide the default image on hover */
+}
+.name1{
+    display: flex;
+    flex-direction:row;
+      gap: 500px;
+      padding:10px;
+      white-space:nowrap;
+      position: absolute;
+      top:1190px;
+      left:450px;
+
+}
+.name2{
+    display: flex;
+    flex-direction:row;
+      gap: 450px;
+      padding:10px;
+      white-space:nowrap;
+      position: relative;
+      top:1920px;
+      left:50px;
+      text-align:left;
+ 
+}
+.name3{
+    display: flex;
+    flex-direction:row;
+      gap: 590px;
+      padding:10px;
+      white-space:nowrap;
+      position: absolute;
+      top:3200px;
+      left:450px;
+      text-align:left;
+ 
+}
+.name4{
+    display: flex;
+    flex-direction:row;
+      gap: 570px;
+      padding:10px;
+      white-space:nowrap;
+      position: absolute;
+      top:4230px;
+      left:450px;
+      text-align:left;
+ 
+}
+.price1{
+    display: flex;
+    flex-direction:row;
+      gap: 610px;
+      padding:10px;
+      white-space:nowrap;
+      position: absolute;
+      top:1220px;
+      left:450px;
+
+}
+.price2{
+    display: flex;
+    flex-direction:row;
+      gap: 610px;
+      padding:10px;
+      white-space:nowrap;
+      position: absolute;
+      top:2230px;
+    left:450px;
+ 
+}
+.price3{
+    display: flex;
+    flex-direction:row;
+      gap: 610px;
+      padding:10px;
+      white-space:nowrap;
+      position: absolute;
+      top:3230px;
+    left:450px;
+ 
+}
+.price4{
+    display: flex;
+    flex-direction:row;
+      gap: 610px;
+      padding:10px;
+      white-space:nowrap;
+      position: absolute;
+      top:4260px;
+    left:450px;
+ 
+}
+
+
+
+.image-container3 {
+    position: absolute;
+     width:auto;
+
+     
+
+}
+
+.image-container3 img {
+    position: absolute;
+    top: 1000px;
+    left: 50px;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.hover-image3 {
+    opacity: 0; /* Hide the hover image by default */
+}
+
+.image-container3:hover .hover-image3 {
+    opacity: 1; /* Show the hover image on hover */
+}
+
+.image-container3:hover .default-image3 {
+    opacity: 0; /* Hide the default image on hover */
+}
+.img3-name{
+    position: absolute;
+    left:50px;
+    top:2000px;
+ }
+
+ .img3-price {
+    position:absolute;
+    left:50px;
+    top:1040px;
+ }
+
+
+
+.image-container4 {
+    position: absolute;
+    width:600px;
+    
+    
+
+}
+
+.image-container4 img {
+    position: absolute;
+    top: 1000px;
+    left: 720px;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.hover-image4 {
+    opacity: 0; /* Hide the hover image by default */
+}
+
+.image-container4:hover .hover-image4 {
+    opacity: 1; /* Show the hover image on hover */
+}
+
+.image-container4:hover .default-image4 {
+    opacity: 0; /* Hide the default image on hover */
+}
+
+.image-container5 {
+    position: absolute;
+    width:600px;
+    
+    
+
+}
+
+.image-container5 img {
+    position: absolute;
+    top: 2000px;
+    left: 50px;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.hover-image5 {
+    opacity: 0; /* Hide the hover image by default */
+}
+
+.image-container5:hover .hover-image5 {
+    opacity: 1; /* Show the hover image on hover */
+}
+
+.image-container5:hover .default-image5 {
+    opacity: 0; /* Hide the default image on hover */
+}
+.image-container6 {
+    position: absolute;
+    width:600px;
+    
+    
+
+}
+
+.image-container6 img {
+    position: absolute;
+    top: 2000px;
+    left: 720px;
+
+    transition: opacity 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.hover-image6 {
+    opacity: 0; /* Hide the hover image by default */
+}
+
+.image-container6:hover .hover-image6 {
+    opacity: 1; /* Show the hover image on hover */
+}
+
+.image-container6:hover .default-image6 {
+    opacity: 0; /* Hide the default image on hover */
+}
+
+.image-container7 {
+    position: absolute;
+    width:600px;
+}
+
+
+.image-container7 img {
+    position: absolute;
+    top: 3030px;
+    left: 50px;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.hover-image7 {
+    opacity: 0; /* Hide the hover image by default */
+}
+
+.image-container7:hover .hover-image7 {
+    opacity: 1; /* Show the hover image on hover */
+}
+
+.image-container7:hover .default-image7 {
+    opacity: 0; /* Hide the default image on hover */
+}
+
+.image-container8 {
+    position: absolute;
+    width:600px;
+    
+    
+
+}
+
+.image-container8 img {
+    position: absolute;
+    top: 3030px;
+    left: 720px;
+
+    transition: opacity 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.hover-image8 {
+    opacity: 0; /* Hide the hover image by default */
+}
+
+.image-container8:hover .hover-image8 {
+    opacity: 1; /* Show the hover image on hover */
+}
+
+.image-container8:hover .default-image8 {
+    opacity: 0; /* Hide the default image on hover */
+}
+
+.footer {
+    background-color: #f4f0eb;
+    text-align: center;
+    padding: 50px 0;
+    position:absolute;
+    top:4500px;
+    left:0px;
+}
+.footer-columns {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:100px;
+    width:100vw;
+
+    
+}
+.footer-column {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-column li {
+    margin: 5px 0;
+}
+.footer-column a {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-size: 16px;
+}
+.footer-column a:hover {
+    text-decoration: underline;
+}
+.footer-bottom {
+    margin-top: 30px;
+    color: #4a4a4a;
+    font-size: 14px;
+}
+.footer-bottom a {
+    color: #4a4a4a;
+    text-decoration: none;
+}
+.footer-bottom a:hover {
+    text-decoration: underline;
+}

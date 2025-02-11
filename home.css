@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    font-family: "Castoro Titling", serif;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px ;
+    background-color: #f8f5f0;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: #4a4a4a;
+    margin: 0 15px;
+    font-size: 15px;
+    padding: 10px 3px;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  }
+
+  .navbar a:hover {
+    background-color: #4a4a4a;
+    color: #f8f5f0;
+    transform: scale(1.05);
+  }
+
+  .navbar .logo {
+    font-size: 45px;
+    font-weight: bold;
+    font-weight: 700;
+    width: 400px;
+    color: #4a4a4a;
+    font-family: "Dancing Script", cursive;
+  }
+  .navbar .left-menu {
+    width:600px;
+    padding: 0;
+  }
+  .navbar .right-menu {
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+
+  .container {
+    display: flex;
+    height: calc(100vh - 80px);
+  }
+
+  .left-section
+  {
+    flex: 1;
+    position: sticky;
+
+  }
+  .right-section {
+    flex: 1;
+  }
+
+  .left-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position:static;
+    display:flex;
+  }
+
+  .right-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/048/987/053/non_2x/fashionable-male-model-in-charcoal-black-suit-trendy-portrait-with-stylish-lifestyle-background-perfect-for-professional-fashion-features-free-photo.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .right-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text readability */
+    z-index: 1;
+  }
+  
+  .right-section .content {
+    color: #f8f5f0;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .right-section .content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
+  }
+
+  .right-section .content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+
+  .right-section .content a {
+    text-decoration: none;
+    color: #f8f5f0;
+    font-size: 18px;
+    border: 2px solid #f8f5f0;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+
+  .right-section .content a:hover {
+    background-color: #f8f5f0;
+    color: #5a7d7c;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+
+    .left-section,
+    .right-section {
+      height: 50vh;
+    }
+
+    .right-section .content h1 {
+      font-size: 32px;
+    }
+
+    .right-section .content p,
+    .right-section .content a {
+      font-size: 16px;
+    }
+  }
